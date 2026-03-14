@@ -16,20 +16,27 @@
             <h1>Inicia sesión con MoonManga</h1>
         </div>
         <div class="login-web">
-            <form action="guardar.php" class="web-login">
-                <label for="Username" class="label">Nombre de usuario </label>
+            <form action="validar.php" class="web-login" method="POST">
+                
+                <label for="Username" class="label">Correo electrónico </label>
                 <br>
-                <input type="text" id="Username" name="Username" required>
+                <input type="text" id="Username" name="email" required>
                 <br>
                 <label for="Password" class="label">Contraseña </label>
                 
                 <br>
-                <input type="password" id="Password" name="Password" required>
-                <a href="#" target="_blank" ><label for="Password" class="label-o">Olvido su contraseña? </label></a>
+                <input type="password" id="Password" name="password" required>
+                <a href="recuperar.php" class="olv">¿Olvidó su contraseña?</a>
                 <br>
                 <br>
            
                 <button type="submit" class="btn-login">Iniciar sesión</button>
+                <br>
+                <br>
+
+                <p class="new_" >¿No tienes cuenta? 
+                    <a href="login.php">Crear cuenta</a>
+                </p>
             </form>
         </div>
     </div>
@@ -37,3 +44,10 @@
    
 </body>
 </html>
+
+
+
+
+
+
+
