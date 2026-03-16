@@ -1,0 +1,23 @@
+body{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+/* contenedor principal */
+.box-header{
+    width: 400px;
+    height: 500px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+
+
+.heade_P h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
