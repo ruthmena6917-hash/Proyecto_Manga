@@ -1,0 +1,1 @@
+                    <a href="../panel.php"><img src="../../img/icon-logo.png" alt="icono de MoonManga" class="ico-logo"></a>

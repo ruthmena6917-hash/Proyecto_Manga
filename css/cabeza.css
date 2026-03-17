@@ -1,23 +1,85 @@
-body{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-}
-/* contenedor principal */
-.box-header{
-    width: 400px;
-    height: 500px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    padding: 40px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
+.box-header{
+    background-color: #111;
+    padding: 15px 30px;
+}
+
+
+.heade_P{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 .heade_P h1{
-    text-align: center;
-    margin-bottom: 30px;
+    color: #fff;
 }
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.menu li{
+    position: relative; 
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: #ccc;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+     font-size: 1.2rem;
+}
+
+.menu li a:hover{
+    color: #fff;
+}
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #222;
+    list-style: none;
+    min-width: 150px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+
+.menu li:hover > .submenu{
+    display: block;
+}
+
+
+.submenu li{
+    width: 100%;
+}
+
+.submenu li a{
+    padding: 10px;
+    color: #ccc;
+}
+
+.submenu li a:hover{
+    background-color: #333;
+    color: #fff;
+   
+}
+
