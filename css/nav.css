@@ -21,6 +21,10 @@
 
 .heade_P h1{
     color: #fff;
+   
+}
+.h1{
+    text-decoration: none;
 }
 
 
@@ -82,4 +86,6 @@
     color: #fff;
    
 }
+
+
 

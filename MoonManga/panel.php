@@ -5,6 +5,9 @@ session_start();
 if(!isset($_SESSION['usuario'])){
 header("Location: login.php");
 }
+
+include "pantalla_Principal/nav.php";
+
 ?>
 
 <h2>Bienvenido <?php echo $_SESSION['usuario']; ?></h2>
