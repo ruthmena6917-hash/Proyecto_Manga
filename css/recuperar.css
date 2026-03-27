@@ -2,7 +2,7 @@ body{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
-/* contenedor principal */
+
 .box-R{
     width: 400px;
     height: 500px;
@@ -16,7 +16,7 @@ body{
 }
 
 
-/* contenedor del título y la imagen */
+
 .comp- h1{
     text-align: center;
     margin-bottom: 30px;
@@ -24,7 +24,7 @@ body{
 
 
 
-/* contenedor del los imput */
+
 .R-R .label{
     font-weight: bold;
     

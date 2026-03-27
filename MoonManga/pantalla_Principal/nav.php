@@ -12,7 +12,7 @@
                  <nav class="heade_P">
                    <a href="panel.php" class="h1"><h1>MoonManga</h1></a>
                         <ul class="menu">
-                <li><a href="nuevos.php">Nuevos</a></li>
+                <li><a href="/MoonManga/pantalla_Principal/nuevos.php">Nuevos</a></li>
                 <li><a href="populares.php">Populares</a></li>
                 <li class="dropdown">
                     <a href="generos.php">Géneros</a>
@@ -74,10 +74,8 @@
 </div>
 
 <script>
-
 const icono = document.getElementById("searchIcon");
 const caja = document.getElementById("searchBox");
-
 
 icono.addEventListener("click", function (e) {
     e.preventDefault();
@@ -88,7 +86,6 @@ icono.addEventListener("click", function (e) {
         caja.style.display = "block";
     }
 });
-
 
 
 </script>

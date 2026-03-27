@@ -10,7 +10,7 @@ include "pantalla_Principal/nav.php";
 
 ?>
 
-<h2>Bienvenido <?php echo $_SESSION['usuario']; ?></h2>
+<h2>Hola, <?php echo $_SESSION['usuario']; ?></h2>
 
 <a href="logout.php">Cerrar sesión</a>
 

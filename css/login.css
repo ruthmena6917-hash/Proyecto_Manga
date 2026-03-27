@@ -2,7 +2,7 @@ body{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
-/* contenedor principal */
+
 .box-login{
     width: 400px;
     height: 500px;
@@ -16,7 +16,6 @@ body{
 }
 
 
-/* contenedor del título y la imagen */
 .comp- h1{
     text-align: center;
     margin-bottom: 30px;
@@ -29,7 +28,6 @@ body{
     height: auto;
 }
 
-/* contenedor del los imput */
 .login-web .label{
     font-weight: bold;
     
