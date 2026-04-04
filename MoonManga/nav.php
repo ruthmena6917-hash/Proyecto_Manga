@@ -1,17 +1,17 @@
 <?php
-// nav.php
+
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-        <!-- Logo / Marca -->
+       
         <a class="navbar-brand fw-bold fs-4" href="/proyecto_manga/MoonManga/panel.php">MoonManga</a>
 
-        <!-- Botón responsive -->
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Contenido del navbar -->
+       
         <div class="collapse navbar-collapse" id="navbarContenido">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -25,7 +25,7 @@
                 </li>
             </ul>
 
-            <!-- Buscador -->
+        
             <form class="d-flex" action="/proyecto_manga/MoonManga/buscar.php" method="GET">
                 <input class="form-control me-2" type="search" name="q" placeholder="Buscar manga..." required>
                 <button class="btn btn-outline-light" type="submit">Buscar</button>
@@ -34,5 +34,5 @@
     </div>
 </nav>
 
-<!-- Bootstrap JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

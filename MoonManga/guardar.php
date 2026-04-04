@@ -19,7 +19,7 @@ if(strlen($password) < 6){
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-// Verificar si el email ya existe
+
 $stmt = $conexion->prepare("SELECT id FROM usuarios WHERE email = ?");
 $stmt->bind_param("s", $email);
 $stmt->execute();

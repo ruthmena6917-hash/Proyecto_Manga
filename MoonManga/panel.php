@@ -7,7 +7,6 @@ header("Location: registro.php");
 }
 
 include "nav.php";
-
 include "main_manga.php";
 
 
@@ -20,7 +19,7 @@ include "main_manga.php";
     <title>Document</title>
 </head>
 <body>
-    <a href="logout.php">Cerrar sesión</a>
+    <a href="logout.php">Cerrar sesión?</a>
 </body>
 </html>
 

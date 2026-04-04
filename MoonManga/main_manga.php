@@ -1,5 +1,4 @@
 <?php
-// mostrar_mangas_cards.php
 include 'conexion.php';
 
 $mensaje = '';
@@ -50,11 +49,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['manga_id'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #ffffff; /* blanco */
-            color: #000000; /* negro */
+            background-color: #ffffff; 
+            color: #000000; 
         }
         .card {
-            background-color: #f8f9fa; /* gris muy claro */
+            background-color: #f8f9fa; 
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid #000000;
@@ -71,19 +70,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['manga_id'])) {
         }
         .card-footer {
             font-size: 0.9rem;
-            background-color: #e9ecef; /* gris claro */
+            background-color: #e9ecef; 
             border-top: 1px solid #000000;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
         .btn-success {
-            background-color: #000000; /* negro */
-            color: #ffffff; /* texto blanco */
+            background-color: #000000; 
+            color: #ffffff; 
             border: 1px solid #000000;
         }
         .btn-success:hover {
             background-color: #333333;
             border-color: #333333;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #ffffff;
+            border: 1px solid #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
         }
         .alert-success {
             background-color: #000000;
@@ -120,13 +128,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['manga_id'])) {
                         <div class="card-footer d-flex justify-content-between align-items-center">
                             <small>Estado: <?= htmlspecialchars($fila['estado_emision']) ?></small>
                             <small>Género: <?= htmlspecialchars($fila['genero']) ?></small>
-                           <div class="d-flex gap-2">
-                            <form method="POST" style="margin:0;">
-                                <input type="hidden" name="manga_id" value="<?= $fila['id'] ?>">
-                                <button type="submit" class="btn btn-success btn-sm">Guardar</button>
-                            </form>
-                           
-                        </div>
+                            <div class="d-flex gap-2">
+                                <!-- Botón Guardar -->
+                                <form method="POST" style="margin:0;">
+                                    <input type="hidden" name="manga_id" value="<?= $fila['id'] ?>">
+                                    <button type="submit" class="btn btn-success btn-sm">Guardar</button>
+                                </form>
+                                <!-- Botón Clasificar -->
+                                <form method="GET" action="clasificacion.php" style="margin:0;">
+                                    <input type="hidden" name="manga_id" value="<?= $fila['id'] ?>">
+                                    <button type="submit" class="btn btn-primary btn-sm">Clasificar</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,6 +151,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['manga_id'])) {
         ?>
     </div>
 </div>
-
 </body>
 </html>
